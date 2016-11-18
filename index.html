@@ -44,7 +44,7 @@
       font-family: 'Open Sans';
       font-size: 10px;
       text-anchor: middle;
-    } 
+    }
   </style>
 </head>
 <body>
@@ -64,7 +64,7 @@
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")"); 
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     var x = d3.scaleLinear()
       .range([0, width]);
@@ -105,9 +105,9 @@
         .attr("x", 0)
         .attr("height", y.bandwidth())
         .attr("y", function(d) { return y(d.letter); })
-        .attr("width", function(d) { return x(d.frequency); 
+        .attr("width", function(d) { return x(d.frequency);
         .attr(
-        }); 
+        });
     });
   </script>
 
